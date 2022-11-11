@@ -8,8 +8,8 @@ vit_ssids = ['VIT5G', 'VIT2.4G']
 login_url = "http://phc.prontonetworks.com/cgi-bin/authlogin"
 logout_url = 'http://phc.prontonetworks.com/cgi-bin/authlogout'
 
-reg_no = '22BEC0602'
-password = '53jbg4r%TC'
+reg_no = ''
+password = ''
 
 
 check_status = check_output('netsh wlan show interface')
