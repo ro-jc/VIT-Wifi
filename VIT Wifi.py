@@ -8,8 +8,8 @@ vit_ssids = ['VIT5G', 'VIT2.4G', 'test']
 login_url = "http://phc.prontonetworks.com/cgi-bin/authlogin"
 logout_url = 'http://phc.prontonetworks.com/cgi-bin/authlogout'
 
-reg_no = '22BEC0602'
-password = '53jbg4r%TC'
+reg_no = ''
+password = ''
 
 
 def login(ssid):
@@ -24,18 +24,6 @@ def login(ssid):
         except requests.exceptions.ConnectionError:
             sleep(0.5)
     return False
-
-
-'''def connect():
-    for ssid in vit_ssids:
-        connection_output = check_output(f'netsh wlan connect {ssid}', shell=True).decode()
-        print(connection_output, end='')
-        
-        if login(): break
-
-    else:
-        print(f'Connection/Login failed. Try going to "{login_url}"')
-        input()'''
 
 
 check_status = check_output('netsh wlan show interface')
